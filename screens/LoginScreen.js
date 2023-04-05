@@ -109,7 +109,7 @@ const LoginScreen = ({navigation}) => {
                      <MessageBox type= {messageType}>{message}</MessageBox>
                      {!isSubmitting &&(
                         <StyledButton onPress ={handleSubmit} >
-                        <ButtonText>Login</ButtonText>
+                        <ButtonText onPress={() =>navigation.navigate("Home")} >Login</ButtonText>
                      </StyledButton>)}
 
                      {isSubmitting && (

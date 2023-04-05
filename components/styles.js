@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { View, Text, Image, TextInput, TouchableOpacity } from 'react-native';
+import {TextInput, TouchableOpacity, View, Text, Image } from 'react-native';
 import  Constants  from 'expo-constants';
 
 const StatusBarHeight = Constants.statusBarHeight;
@@ -21,7 +21,7 @@ export const StyledContainer = styled.View`
     padding: 20px;
     padding-top: ${StatusBarHeight + 30}px;
     background-color: ${primary};
-`
+`;
 
 export const InnerContainer = styled.View`
     flex: 1;
